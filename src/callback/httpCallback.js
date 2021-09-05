@@ -7,7 +7,7 @@ function fetchData(urlApi, callback) {
     xhttp.onreadystatechange = function(event) {
         if (xhttp.readyState === 4) {
             if (xhttp.status === httpStatus.OK) {
-                callback(null, JSON.parse(xhttp.responseText));
+                return callback(null, JSON.parse(xhttp.responseText));
             }
             else {
                 const error = new Error(`Error in ${urlApi}`);
@@ -16,4 +16,8 @@ function fetchData(urlApi, callback) {
         }
     }
     xhttp.send();
+}
+
+export default {
+    fetchData
 }
