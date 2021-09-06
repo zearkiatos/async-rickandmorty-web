@@ -2,8 +2,9 @@ import httpCallback from "../../src/callback/httpCallback";
 import CharacterResponseBuilder from "../builders/characterResponseBuilder";
 const config = require("../../src/config").default;
 describe("Test suite for http callback", () => {
-  test("Should get a id from one of the characters of rick and morty", () => {
+  test("Should get a id from one of the characters of rick and morty", async () => {
     const mockResponse = new CharacterResponseBuilder().build();
+    
     httpCallback.fetchData(
       `${config.RICKANDMORTY_API_BASE_URL}/character`,
       function (error, data) {
@@ -14,8 +15,9 @@ describe("Test suite for http callback", () => {
     );
   });
 
-  test("Should get a origin object from one of the characters of rick and morty", () => {
+  test("Should get a origin object from one of the characters of rick and morty", async () => {
     const mockResponse = new CharacterResponseBuilder().build();
+    
     httpCallback.fetchData(
       mockResponse.results[0].origin.url,
       function (error, data) {
