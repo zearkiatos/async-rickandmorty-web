@@ -18,7 +18,7 @@ class CharacterResponseBuilder extends BaseBuilder {
 
   withResults(results) {
     this.results = results;
-    return results;
+    return this;
   }
 }
 
