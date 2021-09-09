@@ -1,0 +1,38 @@
+{
+  "name": "async-rickandmorty-web",
+  "version": "1.0.0",
+  "description": "Javascript project to understand asyncronism with Javascript, we integrate our application with rick and morty api.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest -c jest.config.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zearkiatos/async-rickandmorty-web.git"
+  },
+  "keywords": [
+    "callback",
+    "promises",
+    "async",
+    "rick",
+    "and",
+    "morty"
+  ],
+  "author": "Pedro Capriles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zearkiatos/async-rickandmorty-web/issues"
+  },
+  "homepage": "https://github.com/zearkiatos/async-rickandmorty-web#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "jest": "^27.1.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "dotenv": "^10.0.0",
+    "http-status-codes": "^2.1.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
